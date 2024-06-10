@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.WidgetActivity"
+    android:background="#100C0B"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_anh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include3"
+        android:layout_marginTop="-1dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="65dp">
+    </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center">
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/imbBackCaptureWid"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|center"
+        android:background="@drawable/custombuttontakephoto"
+        android:gravity="center"
+        android:padding="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/buttontakephoto"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/rcv_anh" />
+    <include
+        android:id="@+id/include3"
+        layout="@layout/custom_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"/>
+</FrameLayout>
